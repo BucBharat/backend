@@ -13,7 +13,7 @@ const app = express();
 app.use(bodyParser.json({ extended: true }));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
-app.use('/users', route);
+app.use('/api/books', route);
 
 const PORT = 8080;
 const URL = 'mongodb://127.0.0.1:27017/test1';
